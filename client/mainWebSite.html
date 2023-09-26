@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+    <link rel="stylesheet" href="css/mainWebSite.css" />
+    <title>Лабораторная 1</title>
+  </head>
+  <body>
+    <div class="box">
+      <div class="fio">Подольский Вячеслав Ильич</div>
+      <div class="group">Группа: P3220</div>
+      <div class="variant">Вариант: 3007</div>
+    </div>
+    <div class="frame">
+      <div class="div">
+        <div class="overlap">
+          <div class="overlap-group">
+            <img class="polygon" src="img/polygon-1.svg" />
+            <img class="ellipse" src="img/ellipse-1.png" />
+            <img class="rectangle" src="img/rectangle.svg"></div>
+            <img class="arrow" src="img/arrow-1.svg" />
+            <img class="img" src="img/arrow-2.svg" />
+            <img class="line" src="img/line-1.svg" />
+            <img class="line-2" src="img/line-7.svg" />
+            <img class="line-3" src="img/line-2.svg" />
+            <img class="line-4" src="img/line-8.svg" />
+            <div class="text-wrapper">R/2</div>
+            <div class="text-wrapper-2">-R/2</div>
+            <div class="text-wrapper-3">R/2</div>
+            <div class="r">-R/2</div>
+            <div class="text-wrapper-4">-R</div>
+            <div class="r-2">-R</div>
+            <img class="line-5" src="img/line-3.svg" />
+            <img class="line-6" src="img/line-5.svg" />
+            <img class="line-7" src="img/line-6.svg" />
+            <img class="line-8" src="img/line-4.svg" />
+          </div>
+          <div class="text-wrapper-5">R</div>
+          <div class="text-wrapper-6">y</div>
+          <div class="text-wrapper-7">x</div>
+          <div class="text-wrapper-8">R</div>
+        </div>
+        <p class="p">Тестирование попадания точки на плоскость</p>
+        <form action="../script/MainWebSite.php" method="GET" target="_blank" onsubmit=" return sendFunction()">
+          <div class="form-container">
+        <div class="field_x">
+          <p>Координата X</p>
+          <div class="radio_btn">
+            <input type="radio" id="x1" name="x" value="-4"/>
+            <label for="x1">-4</label>
+          </div>
+
+          <div class="radio_btn">
+            <input type="radio" id="x2" name="x" value="-3"/>
+            <label for="x2">-3</label>
+          </div>
+
+          <div class="radio_btn">
+            <input type="radio" id="x3" name="x" value="-2"/>
+            <label for="x3">-2</label>
+          </div>
+
+          <div class="radio_btn">
+            <input type="radio" id="x4" name="x" value="-1"/>
+            <label for="x4">-1</label>
+          </div>
+
+          <div class="radio_btn">
+            <input type="radio" id="x5" name="x" value="0"/>
+            <label for="x5">0</label>
+          </div>
+          
+          <div class="radio_btn">
+            <input type="radio" id="x6" name="x" value="1"/>
+            <label for="x6">1</label>
+          </div>
+
+          <div class="radio_btn">
+            <input type="radio" id="x7" name="x" value="2"/>
+            <label for="x7">2</label>
+          </div>
+
+          <div class="radio_btn">
+            <input type="radio" id="x8" name="x" value="3"/>
+            <label for="x8">3</label>
+          </div>
+
+          <div class="radio_btn">
+            <input type="radio" id="x9" name="x" value="4"/>
+            <label for="x9">4</label>  
+          </div>
+          <span class="error" id="xError"></span>
+        </div>
+          <div class="field_y">
+          <p class="text_y">Координата Y</p>
+          <input type="text" id="field_y" name="y" placeholder="(-3...5)"/>
+          <span class="error" id="yError"></span>
+        </div>
+        <div class="checkbox_r">
+          <p class="text_r">Выберите R</p>
+          <input type="checkbox" id="r1" name="r[]" value="1"/>
+          <label class="radius" for="r1">1</label>
+          <input type="checkbox" id="r2" name="r[]" value="2"/>
+          <label class="radius" for="r2">2</label>
+          
+          <input type="checkbox" id="r3" name="r[]" value="3"/>
+          <label class="radius" for="r3">3</label>
+        
+          <input type="checkbox" id="r4" name="r[]" value="4"/>
+          <label class="radius" for="r4">4</label>
+          
+          <input type="checkbox" id="r5" name="r[]" value="5"/>
+          <label class="radius" for="r5">5</label>
+           <span class="error" id="rError"></span>
+        </div>
+        <input type="submit" class="submit" value="Подтвердить"/>
+      </div>
+      </form>
+         
+      </div>
+    </div>
+
+    <script src="../script/mainWebSite.js"></script>
+  </body>
+</html>
